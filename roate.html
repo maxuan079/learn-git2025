@@ -1,0 +1,40 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<style>.space {
+    position: relative;
+    width: 400px;
+    height: 400px;
+  }
+  
+  .orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    transform: translate(-50%, -50%);
+  }
+  .planet-img {
+    width: 100px;  
+    height: 100px;
+    animation: rotate 5s linear infinite;
+    transform: translate(100px); 
+  }
+  
+  @keyframes rotate {
+    from { transform:rotate(0deg) translate(100px) rotate(0deg); }
+    to { transform:rotate(360deg) translate(100px) rotate(-360deg); }
+  }
+  </style>
+<body>
+ <div class="space">
+    <div class="orbit">
+      <img src="https://ts1.tc.mm.bing.net/th/id/R-C.af68cd3ac3f18c2b8743b1f4bb19a30b?rik=%2bc6u7TaCkYix1g&riu=http%3a%2f%2fwww.kuaipng.com%2fUploads%2fpic%2fwater%2f24176%2fgoods_water_24176_698_698_.png&ehk=glhvu%2fblNRyLjLiAGHVXv3UjtVle11HOY%2bAqlp%2bAfVM%3d&risl=&pid=ImgRaw&r=0" class="planet-img" alt="笑脸">
+    </div>
+  </div>
+</body>
+</html>
