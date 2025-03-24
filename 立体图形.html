@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+    <style>body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: black;
+        perspective: 1000px; 
+      }
+      
+      .mian {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        transform-style: preserve-3d;
+        animation: rotate 10s infinite linear;
+      }
+      
+      
+      .a {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        backface-visibility: visible;
+      }
+      
+      
+      .front {
+        transform: translateZ(100px);
+        background: red;
+      }
+      
+      .back {
+        transform: rotateY(180deg) translateZ(100px);
+        background: blue;
+      }
+      
+      .right {
+        transform: rotateY(90deg) translateZ(100px);
+        background:pink;
+      }
+      
+      .left {
+        transform: rotateY(-90deg) translateZ(100px);
+        background:green;
+      }
+      
+      .top {
+        transform: rotateX(90deg) translateZ(100px);
+        background: yellow;
+      }
+      
+      .bottom {
+        transform: rotateX(-90deg) translateZ(100px);
+        background: purple;
+      }
+      
+      @keyframes rotate {
+        from {
+          transform: rotateX(0) rotateY(0) rotateZ(0);
+        }
+        to {
+          transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+        }
+      }</style>
+  <div class="mian">
+    <div class="a front"></div>
+    <div class="a back"></div>
+    <div class="a right"></div>
+    <div class="a left"></div>
+    <div class="a top"></div>
+    <div class="a bottom"></div>
+  </div>
+</body>
+</html>
+</html>
