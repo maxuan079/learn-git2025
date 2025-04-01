@@ -136,3 +136,159 @@ console.log(v.toFixed(2))
     var x = a ** b
     console.log(x)
 </script>
+
+
+
+
+<script id="ch0104/1">
+    var n = +prompt("Enter a number: ")
+    if (n > 0){
+        console.log("positive")
+    }else  if (n < 0){
+        console.log("negative")
+    }else{console.log("zero")
+    }
+</script>
+<script id="ch0104/2">
+    var n = +prompt("Enter a number: ")
+    if (n > 0){
+        console.log(n)
+    }else   (n < 0) 
+    {
+        console.log(-n)
+    }
+</script>
+<script id="ch0104/3">
+    var n = +prompt("Enter a number: ")
+    if (n % 2 == 0){
+        console.log("even")
+    }else if (n % 2 == 1){
+        console.log("odd")
+    }
+        
+</script>
+<script id="ch0104/4">
+ var char = prompt()
+    var ascill = char.charCodeAt(0)
+    if (ascill % 2 == 0){
+        console.log("YES")
+    }else{
+        console.log("NO")
+    } 
+    
+</script>
+<script id="ch0104/5">
+   var x = +prompt("Enter a number: ")
+    var y = +prompt("Enter another number: ")
+    if (x > y){
+        console.log(">")
+    }
+    else if (x < y){
+        console.log("<")
+    }
+    else{
+        console.log("=")
+    }
+</script>
+<script id="ch0104/6">
+var n = +prompt("Enter a number: ")
+    if (n >= 10 && n <=99){
+        console.log("1")
+    }else{
+        console.log("0")
+    }
+    
+</script>
+<script id="ch0104/7">
+    var x = +prompt("Enter a number: ")
+    var y = +prompt("Enter another number: ")
+    if (x >= 10 || y >= 20){
+        console.log(1)
+    } else {
+        console.log(0)
+    }
+</script>
+<script id="ch0104/8">
+    var x = +prompt("Enter a number: ")
+    if (x % 3 == 0 && x % 5 == 0){
+        console.log("YES")
+    } else{
+        console.log("NO")
+    }
+</script>
+<script id="ch0104/9">
+    var n = +prompt("Enter a number: ")
+    if (n % 3 == 0 && n % 5 == 0 && n % 7 == 0){
+        console.log("3, 5, 7")
+    } else if (n % 3 == 0 && n % 5 == 0){
+        console.log("3, 5")
+    } else if (n % 3 == 0 && n % 7 == 0){
+        console.log("3, 7")
+    } else if (n % 5 == 0 && n % 7 == 0){
+        console.log("5, 7")
+    } else if (n % 3 == 0){
+        console.log("3")
+    } else if (n % 5 == 0){
+        console.log("5")
+    } else if (n % 7 == 0){
+        console.log("7")
+    } else {
+        console.log("n")
+    }      
+</script>
+<script id="ch0104/10">
+    var a = +prompt()
+    var b = +prompt()
+    if (a > 60 && b < 60 || a < 60 && b > 60){
+        console.log("1")
+    }else if (a > 60 && b > 60){
+        conaole.log("0")
+    }
+</script>
+<script id="ch0104/11">
+    var n = +prompt()
+    if (n == 2 || n == 4 || n == 6 || n == 7 ){
+        console.log("YES")
+    }else {
+        console.log("NO")
+    }
+</script>
+<script id="ch0104/12">
+    var distance = +prompt()
+    var timeByWalk = distance / 1.2
+    var timeByBike = distance / 3
+    if (timeByBike < timeByWalk){
+        console.log("Bike")
+    }else if(timeByBike > timeByWalk ){
+        console.log("Walk")
+    }else{
+        console.log("All")
+    }
+</script>
+<script id="ch0104/13">
+    var x = +prompt()
+    var y
+    if(x >=0 && x < 5 ){
+         y = -x + 2.5
+    } else if(x >= 5 && x < 10){
+         y = 2 - 1.5 * (x - 3) * (x - 3)
+    } else(x < 20) 
+        y = x / 2 - 1.5
+    console.log(y.toFixed(3))
+</script>
+<script id="ch0104/14">
+    var w = +prompt()
+    var em = prompt()
+    var price = 8
+    if (w > 1000){
+        price = price + Math.ceil((w - 1000) / 500) * 4
+    }
+    if (em == "y"){
+        price = price + 5
+    }
+    console.log(price)
+
+</script>
+<script id="ch0104/15">
+    
+</script>
