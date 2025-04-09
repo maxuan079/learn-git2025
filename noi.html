@@ -776,7 +776,7 @@ else{
     var sum = 0
     for (var i = 0; i <= n; i++){
         a += (i + 1)
-        b += (i )
+        b += (i)
         sum += a / b
     }
     console.log(sum.toFixed(4))
@@ -801,8 +801,126 @@ else{
     console.log(sum)   
 </script>
 <script id="ch0105/35">
-    
+    var n = +prompt("Enter a number: ")
+    var f = 1
+    var sum = 1
+    for (var i = 1; i <= n; i++){
+        f *= 1 / i                     
+        sum += f
+    }
+    console.log(sum.toFixed(10)) 
 </script>
 <script id="ch0105/36">
+    function xn (x, n){
+        return x ** n
+    }
+    var n = +prompt("Enter a number: ")
+    var x = +prompt("Enter a number: ")
+    var sum = 0
+    for (var i = 0; i <= n; i++){
+        sum = sum + xn (x, i)
+        
+    }
+    console.log(sum.toFixed(4))
+</script>
+<script id="ch0105/37">
     
+</script>
+<script id="ch0105/38">
+    var  sum = +prompt()
+    for (var i = 0; i < c; i++){
+        var n = +prompt()
+if (n == 0){
+    var  c = +prompt
+    console.log(0)
+}
+
+        for (var j =n; j >= 0; j-- ){
+            var c= +prompt()
+            if (j !== 0){
+            console.log(c * j)
+        }
+    }
+}
+</script>
+<script id="ch0105/39">
+    function 与7无关 (x){
+        if (x % 7 == 0){
+            return false
+        }else if (x % 10 == 7){
+            return false
+        }else if (Math.floor(x / 10) % 10 == 7){
+            return false
+        }else if (Math.floor(x / 100) % 10 == 7){
+            return false
+        }else{
+            return true
+        }
+    }
+    var n = +prompt()
+    for (var i = 1; i <= n; i++){
+        if (i与7无关(i)){
+            console.log(i * i)
+        }
+    }
+    console.log(sum)
+</script>
+<script id="ch0105/40">
+    function count1(n){  //计算1的个数
+        var count = 0
+        while (n > 0){
+            var d = n % 10
+            if (d == 1){
+                count += 1
+            }
+            n = (n - d) / 10
+        }
+        return count
+    }
+    var n = +prompt("Enter a number: ")
+    var count = 0
+    for (var i = 1; i <= n; i++){
+         count += count1(i)   
+    }
+    console.log(count)
+</script>
+<script id="ch0105/41">
+    
+</script>
+<script id="ch0105/42">
+    
+</script>
+<script id="ch0105/43">
+    var n = +prompt("Enter a number: ")
+    for (var i = n - i; i >= 2; i--){
+        if (n % i == 0){
+            console.log(i)
+            break
+        }
+    }
+</script>
+<script id="ch0105/44">
+    function isPrime(n){
+        for (var x = 2; x < n; x++){
+            if (n % x == 0){
+                return false
+            }
+            else{
+                return true
+            }
+        }
+
+    }
+    var n = +prompt("Enter a number: ")
+    var count = 0
+    for (var i = 2; ;i++){
+        if (isPrime(i)){
+            count++
+            if (count == n){
+                console.log(i)
+                break
+            }
+        }
+
+    }
 </script>
